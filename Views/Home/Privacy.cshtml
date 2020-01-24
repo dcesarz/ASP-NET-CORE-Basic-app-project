@@ -1,0 +1,23 @@
+﻿@using dotnet_project.Models
+@{
+    ViewData["Title"] = "Privacy Policy";
+    LinkContext linkContext1 = new LinkContext
+    {
+        url = "https://github.com/tborzyszkowski/CS_OOP/tree/master/Projekt",
+        display_name = "Przykładowy link 1."
+    };
+    LinkContext linkContext2 = new LinkContext
+    {
+        url = "https://google.com",
+        display_name = "Przykładowy link 2."
+    };
+}
+
+<sl info="linkContext1"></sl>
+<sl info="linkContext2"></sl>
+@section paragraph
+{
+    <p class="jumbotron">
+        Inne rozszerzenie widoku!
+    </p>
+}
